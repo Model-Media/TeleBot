@@ -21,9 +21,9 @@ ENV = bool(os.environ.get("ENV", False))
 
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("2474270", 6))
     # 6 is a placeholder
-    API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+    API_HASH = os.environ.get("d6c0a53a212d5cd76afd69a48a9d80f8", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
@@ -63,10 +63,10 @@ class Var(object):
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     PMBOT_START_MSSG = os.environ.get("PMBOT_START_MSSG", None)
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", None)
-    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+    HEROKU_API_KEY = os.environ.get("879de99c-e8d3-47e4-90d6-6653e9c64485", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
-    TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
+    TG_BOT_TOKEN_BF_HER = os.environ.get("1881115083:AAFEvSPZSlBOPCD3tSp2_CLb8jBRj-7Wwos", None)
+    TG_BOT_USER_NAME_BF_HER = os.environ.get("ModelUserBot", None)
     NO_SONGS = bool(os.environ.get("NO_SONGS", False))
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
     MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
@@ -142,9 +142,9 @@ if ENV:
             os.environ.get("GOOGLE_SEARCH_COUNT_LIMIT", 9))
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
         # Telegram BOT Token from @BotFather
-        TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
+        TG_BOT_TOKEN_BF_HER = os.environ.get("1881115083:AAFEvSPZSlBOPCD3tSp2_CLb8jBRj-7Wwos", None)
         TG_BOT_USER_NAME_BF_HER = os.environ.get(
-            "TG_BOT_USER_NAME_BF_HER", None)
+            "ModelUserBot", None)
         #
         NO_SONGS = bool(os.environ.get("NO_SONGS", False))
         #
@@ -156,7 +156,7 @@ if ENV:
             int(x) for x in os.environ.get(
                 "UB_BLACK_LIST_CHAT", "").split())
         # maximum number of messages for antiflood
-        MAX_ANTI_FLOOD_MESSAGES = 10
+        MAX_ANTI_FLOOD_MESSAGES = 11
         # warn mode for anti flood
         ANTI_FLOOD_WARN_MODE = ChatBannedRights(
             until_date=None,
